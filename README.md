@@ -18,7 +18,7 @@ systemctl start docker.service
 systemctl enable docker.service
 ```
 
-## Portainer Setup : You can follow the offical URl: https://install.portainer.io/setup
+## Portainer Setup : You can follow the official URl: https://install.portainer.io/setup
 ```sh
 docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always \
     -v /var/run/docker.sock:/var/run/docker.sock \
