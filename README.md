@@ -25,11 +25,11 @@ docker run -d -p 8000:8000 -p 9443:9443 --name=portainer --restart=always \
     -v portainer_data:/data \
     portainer/portainer-ee
 ```
----
+```
 ~]# docker container ls
 CONTAINER ID   IMAGE                      COMMAND            CREATED             STATUS             PORTS       NAMES                                                              
 7bf79e51a687   portainer/portainer-ee     "/portainer"       About an hour ago   Up About an hour   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp, 0.0.0.0:9443->9443/tcp, :::9443->9443/tcp, 9000/tcp   portainer
----
+```
 
 Now that the installation is complete, you can log into your Portainer Server instance by opening a web browser and going to:
 ```
